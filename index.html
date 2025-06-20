@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompraHogar - Materiales de Construcci?n</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> +1-234-567-8900</span>
+                        <span><i class="fas fa-envelope"></i> info@comprahogar.com</span>
+                    </div>
+                    <div class="header-benefits">
+                        <span>? Env?o gratis desde $100</span>
+                        <span>? Entrega en 24hs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <i class="fas fa-hammer"></i>
+                        <h1>CompraHogar</h1>
+                    </div>
+
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar materiales de construcci?n...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+
+                    <nav class="nav-desktop">
+                        <a href="#productos">Productos</a>
+                        <a href="#categorias">Categor?as</a>
+                        <a href="#ofertas">Ofertas</a>
+                        <a href="#contacto">Contacto</a>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">3</span>
+                        </button>
+                    </nav>
+
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-search">
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <nav>
+                <a href="#productos">Productos</a>
+                <a href="#categorias">Categor?as</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Tu Hogar, Nuestra Prioridad</h2>
+                <p>Los mejores materiales de construcci?n al mejor precio. Cemento, ladrillos, arena, hierro y m?s. ?Construye tus sue?os con nosotros!</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Ver Cat?logo <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn-secondary">Solicitar Presupuesto</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <h3>Entrega R?pida</h3>
+                    <p>Entrega en 24-48 horas en toda la ciudad. Program? tu entrega cuando te convenga.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Calidad Garantizada</h3>
+                    <p>Todos nuestros materiales cumplen con las normas de calidad m?s exigentes.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-star"></i>
+                    <h3>Mejores Precios</h3>
+                    <p>Precios competitivos y ofertas especiales para profesionales de la construcci?n.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categor?as -->
+    <section class="categories" id="categorias">
+        <div class="container">
+            <h2>Nuestras Categor?as</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">??</div>
+                    <h3>Cemento</h3>
+                    <p>120+ productos</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">?</div>
+                    <h3>Ladrillos</h3>
+                    <p>85+ productos</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">??</div>
+                    <h3>Arena & Grava</h3>
+                    <p>45+ productos</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">?</div>
+                    <h3>Hierro & Acero</h3>
+                    <p>200+ productos</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">?</div>
+                    <h3>Herramientas</h3>
+                    <p>150+ productos</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">?</div>
+                    <h3>Pintura</h3>
+                    <p>95+ productos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="products" id="productos">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200/f0f0f0/666?text=Cemento+Portland" alt="Cemento Portland">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cemento</span>
+                        <h3>Cemento Portland 50kg</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$25.99</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200/f0f0f0/666?text=Ladrillo+Hueco" alt="Ladrillo Hueco">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ladrillos</span>
+                        <h3>Ladrillo Hueco 12x18x33</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$0.85</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200/f0f0f0/666?text=Arena+Fina" alt="Arena Fina">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Arena</span>
+                        <h3>Arena Fina x m?</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(4.7)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$45.00</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200/f0f0f0/666?text=Hierro+del+8" alt="Hierro del 8">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Hierro</span>
+                        <h3>Hierro del 8 x 12m</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$18.50</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active" data-slide="0">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Excelente calidad y precios. Siempre encuentro todo lo que necesito para mis obras."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60/f0f0f0/666?text=CM" alt="Carlos Mendoza">
+                            <div>
+                                <h4>Carlos Mendoza</h4>
+                                <span>Constructor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial" data-slide="1">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"La entrega es s?per r?pida y los materiales llegan en perfecto estado. Muy recomendado."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60/f0f0f0/666?text=MG" alt="Mar?a Garc?a">
+                            <div>
+                                <h4>Mar?a Garc?a</h4>
+                                <span>Arquitecta</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial" data-slide="2">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Trabajo con ellos hace 3 a?os. Precios justos y calidad garantizada siempre."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60/f0f0f0/666?text=RS" alt="Roberto Silva">
+                            <div>
+                                <h4>Roberto Silva</h4>
+                                <span>Maestro de Obra</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-dots">
+                    <button class="dot active" onclick="currentSlide(0)"></button>
+                    <button class="dot" onclick="currentSlide(1)"></button>
+                    <button class="dot" onclick="currentSlide(2)"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>?Listo para comenzar tu proyecto?</h2>
+            <p>Contactanos para un presupuesto personalizado</p>
+            <div class="cta-buttons">
+                <button class="btn-primary">Solicitar Presupuesto</button>
+                <button class="btn-secondary">Ver Cat?logo Completo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-hammer"></i>
+                        <h3>CompraHogar</h3>
+                    </div>
+                    <p>Tu aliado en construcci?n. Materiales de calidad para hacer realidad tus proyectos.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#">Cemento</a></li>
+                        <li><a href="#">Ladrillos</a></li>
+                        <li><a href="#">Arena & Grava</a></li>
+                        <li><a href="#">Hierro & Acero</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">T?rminos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <div><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</div>
+                        <div><i class="fas fa-phone"></i> +1-234-567-8900</div>
+                        <div><i class="fas fa-envelope"></i> info@comprahogar.com</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 CompraHogar. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
